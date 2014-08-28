@@ -1,0 +1,108 @@
+\relax 
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
+\@writefile{toc}{\beamer@endinputifotherversion {3.10pt}}
+\@writefile{nav}{\beamer@endinputifotherversion {3.10pt}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {1}{1}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {2}{2}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {3}{3}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{4}{4/4}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {4}{4}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{5}{5/8}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {5}{8}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{6}{9/12}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {9}{12}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{7}{13/18}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {13}{18}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{8}{19/29}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {19}{29}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{9}{30/30}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {30}{30}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{10}{31/31}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {31}{31}}}
+\@writefile{toc}{\beamer@sectionintoc {1}{Basic structuring: columns, relative sizes}{32}{0}{1}}
+\@writefile{nav}{\headcommand {\sectionentry {1}{Basic structuring}{32}{Basic structuring: columns, relative sizes}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {1}{31}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {1}{31}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{0}{11}{32/32}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {32}{32}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{0}{12}{33/34}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {33}{34}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{0}{13}{35/39}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {35}{39}}}
+\@writefile{toc}{\beamer@sectionintoc {2}{How to align and uncover figures}{40}{0}{2}}
+\@writefile{nav}{\headcommand {\sectionentry {2}{Figures}{40}{How to align and uncover figures}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {32}{39}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {32}{39}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{0}{14}{40/40}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {40}{40}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{0}{15}{41/44}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {41}{44}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{0}{16}{45/46}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {45}{46}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{0}{17}{47/47}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {47}{47}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{0}{18}{48/48}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {48}{48}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{0}{19}{49/50}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {49}{50}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{0}{20}{51/53}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {51}{53}}}
+\@writefile{toc}{\beamer@sectionintoc {3}{``You gotta move it, move it!''}{54}{0}{3}}
+\@writefile{nav}{\headcommand {\sectionentry {3}{Animation}{54}{``You gotta move it, move it!''}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {40}{53}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {40}{53}}}
+\@writefile{nav}{\headcommand {\slideentry {3}{0}{21}{54/54}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {54}{54}}}
+\@writefile{nav}{\headcommand {\slideentry {3}{0}{22}{55/55}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {55}{55}}}
+\@writefile{nav}{\headcommand {\slideentry {3}{0}{23}{56/56}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {56}{56}}}
+\@writefile{toc}{\beamer@sectionintoc {4}{A few ways of showing code}{57}{0}{4}}
+\@writefile{nav}{\headcommand {\sectionentry {4}{Code}{57}{A few ways of showing code}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {54}{56}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {54}{56}}}
+\@writefile{nav}{\headcommand {\slideentry {4}{0}{24}{57/57}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {57}{57}}}
+\@writefile{nav}{\headcommand {\slideentry {4}{0}{25}{58/63}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {58}{63}}}
+\@writefile{nav}{\headcommand {\slideentry {4}{0}{26}{64/64}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {64}{64}}}
+\@writefile{nav}{\headcommand {\slideentry {4}{0}{27}{65/71}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {65}{71}}}
+\@writefile{nav}{\headcommand {\slideentry {4}{0}{28}{72/72}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {72}{72}}}
+\@writefile{lol}{\contentsline {lstlisting}{talk.tex}}
+\@writefile{nav}{\headcommand {\slideentry {4}{0}{29}{73/73}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {73}{73}}}
+\@writefile{lol}{\contentsline {lstlisting}{ex.f90}}
+\@writefile{nav}{\headcommand {\slideentry {4}{0}{30}{74/74}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {74}{74}}}
+\@writefile{toc}{\beamer@sectionintoc {5}{Summary}{75}{0}{5}}
+\@writefile{nav}{\headcommand {\sectionentry {5}{Summary}{75}{Summary}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {57}{74}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {57}{74}}}
+\@writefile{nav}{\headcommand {\slideentry {5}{0}{31}{75/75}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {75}{75}}}
+\@writefile{nav}{\headcommand {\slideentry {5}{0}{32}{76/79}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {76}{79}}}
+\@writefile{nav}{\headcommand {\slideentry {5}{0}{33}{80/80}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {80}{80}}}
+\@writefile{nav}{\headcommand {\beamer@partpages {1}{80}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {75}{80}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {75}{80}}}
+\@writefile{nav}{\headcommand {\beamer@documentpages {80}}}
+\@writefile{nav}{\headcommand {\def \inserttotalframenumber {33}}}
