@@ -1,0 +1,52 @@
+
+%\usepackage{color}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{nameref}
+
+% A package for simple formatting of code listings
+\usepackage{listings} 
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt} 
+\lstset{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{red!70!black},
+  commentstyle=\color{green!50!black},
+  breaklines=true,  defaultdialect=[90]fortran,  defaultdialect=[LaTeX]TeX,
+  morecomment=[l]{!\ }% Comment only with space after !
+}
+
+\usepackage{xparse}
+\usepackage{tikz}
+\usetikzlibrary{matrix,backgrounds}
+\pgfdeclarelayer{myback}
+\pgfsetlayers{myback,background,main}
+
+\tikzset{mycolor/.style = {line width=1bp,color=#1}}%
+\tikzset{myfillcolor/.style = {draw,fill=#1}}%
+
+
+
+
+
+% Animate a sequence of images
+\usepackage{animate}
+
+% Show movies by click, but with external viewer
+\usepackage{multimedia}
+
+
+\newcommand{\slidefoot}[1]{
+  \vfill
+  \hrule
+  \vspace{.02\textheight}
+
+  {\small #1}
+}
+
+\newcommand{\highlight}[1]{%
+  \colorbox{green!50}{$\displaystyle#1$}}
+  

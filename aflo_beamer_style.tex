@@ -1,0 +1,56 @@
+% define your beamer style
+
+
+\mode<presentation>
+{
+
+  \setbeamertemplate{footline}[frame number]
+
+%  \usetheme{Singapore} % linear navigation along the top
+%  \usetheme{Warsaw} % linear navigation along the top
+%  \usetheme{Pittsburg} % linear navigation along the top
+  \usetheme{CambridgeUS} % linear navigation along the top
+%  \usetheme{Madrid} % linear navigation along the top
+  
+%  \usefonttheme{professionalfonts}
+  \usefonttheme[onlysmall]{structurebold}
+}
+
+
+
+% Unified colour, but feel free to adap to the colour scheme
+% used at your institution/company:
+\definecolor{afloblue}{RGB}{0,55,205}
+\usecolortheme[named=afloblue]{structure}
+
+% Partner logo on the left, replace with your logo and
+% adjust size with 'height', depth from line with 'raisebox'
+\def\instlogo{%
+% \raisebox{6pt}{\includegraphics[height=6ex]{QM60BlackOnLight}}%
+%   \raisebox{6pt}{\includegraphics[height=12ex]{ccfd3}}%
+   \raisebox{0 pt}{\hspace{1 cm}\includegraphics[height=0.8 cm]{logo_PW}}%
+}
+% White on Black Aboutflow logo (designed by Mateusz Gugala):
+\def\aflologo{%
+  \raisebox{-6 pt}{\includegraphics[height=10ex]{AF-LOGO-v10}}%
+}
+
+\def\deptlogo{%
+   \raisebox{0 pt}{\includegraphics[height=0.8 cm]{ccfd3.png}}%
+}
+
+%\newcommand{\nologo}{\setbeamertemplate{logo}{}} % command to set the logo to nothing
+
+\setbeamertemplate{footline}[text line]{%
+       \parbox{.95\linewidth}{\vspace{-2pt}\hspace{-10pt}{
+           \instlogo\hspace{2 pt} \deptlogo\hspace{1.8 cm}\aflologo
+         }}
+	\parbox{\linewidth}{
+	\textcolor{Gray}{\hspace{10pt}\vspace*{2pt} \insertframenumber/\inserttotalframenumber}}}
+         
+%\setbeamertemplate{footline}{New template \insertframenumber}
+\setbeamertemplate{navigation symbols}{}
+
+%\setbeamercovered{dynamic}
+\setbeamercovered{transparent=6}
+

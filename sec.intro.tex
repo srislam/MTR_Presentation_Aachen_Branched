@@ -1,0 +1,272 @@
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+%\section*{Motivation} 
+\newcommand{\ltx}[1]{{\tt \textbackslash#1}}
+\begin{frame}{Personal Information}
+\uncover<1->{
+\begin{block}{Background}
+\begin{itemize}
+\item Born in Khulna, Bangladesh
+\item B.Sc. in Mechanical Engineering from Bangladesh University of Engineering \&Technology
+%\item Worked for Metso Inc. as a Design Engineer
+\item M.Sc. in Computational Mechanics from University of Duisburg-Essen,Germany
+\end{itemize}
+\end{block}
+}
+\uncover<2->{
+\begin{block}{Current Position}
+\begin{itemize}
+\item Joined WUT as ESR 14 on October, 2013
+\item Supervised by Prof. Jacek Szumbarski
+\end{itemize}
+\end{block}
+}
+\end{frame}
+
+ %%%%%%%%%%% Objectives %%%%%%%%%%%
+\begin{frame}{Objectives}
+\begin{block}{}
+\begin{itemize}
+\item Adjoint solver for unsteady Navier-Stokes (including check pointing)
+%\item Usage of adjoint calculation for shape optimization and optionally for optimal control
+\item Shape optimization using unsteady adjoint solver with option for optimal control
+\item Optimize the performance with grid adaptation and optionally multi-gird
+%\item Performance optimization with grid adaptation optional objective with multi-grid
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Work Plan}
+
+\begin{block}{Preliminaries}
+\begin{itemize}\item Unsteady adjoint for a simple ODE with check pointing
+\item optimal control for simple ODE
+\end{itemize}
+\end{block}
+\pause
+\begin{block}{Prerequisites}
+\begin{itemize}
+\item Unsteady Euler/NS solver (Residual Distribution Scheme)
+\end{itemize}
+\end{block}
+\pause
+\begin{block}{Primary Task}
+\begin{itemize}
+\item Implementation of unsteady adjoint in the NS solver
+\item Implementation of moving geometry
+\item Gradient-based shape optimization
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Work Plan - continued}
+\begin{block}{Testing and evaluation}
+\begin{itemize}
+\item Testing of the Euler/NS code on non-stationary cases
+\item Testing of the obtained gradients against finite difference
+\item Testing of a complete optimization
+\end{itemize}
+\end{block}
+\begin{block}{Performance improvements}
+\begin{itemize}
+\item Hessian-of-solution based mesh refinement
+\item Goal-oriented based mesh refinement
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+%\begin{frame}{What this template is about}
+%  \uncover<+->{This template provides a unified style, but
+%    there is no requirement to adopt it. Use it, if you like it,
+%    feel free to modify the colour scheme to match your
+%    group style. 
+%  \vfil
+%  \uncover<+->{This is not an exhaustive explanation of latex
+%    and beamer, there are lots of guides and help pages
+%    around.}
+%  \vfil
+%  \uncover<+->{We just present typical elements we often use,
+%    as well as suggesting some better practices. Hopefully this
+%    is useful to save you time and help you make better presentations}
+%   }
+%  \vfil
+%  \uncover<+->{You will need to replace the QM logo at the bottom left
+%    with the logo of your group and/or institution. Look for the
+%    macro \ltx{instlogo} in {\tt aflo\_beamer\_style.tex}.
+%   }
+%\end{frame}
+
+\begin{frame}
+\frametitle{Progress}
+\begin{block}{Progress}
+\begin{itemize}
+\item Literature review
+\item In house training on adjoint-based mesh adaptation and optimization
+\item Training workshop attended on AD tools organized by AboutFlow project
+\item Training workshop attended on MPI organized by HLRS, Germany
+\item Development of Adjoint implementation on Euler solver is underway.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Secondments}
+
+\begin{block}{RWTH}
+\begin{itemize}
+\item Familiarization in parallelization of adjoint solvers
+\item Review of AD tools for parallel application
+\item Implementation of operator overloading based AD to develop Adjoint solver 
+
+\end{itemize}
+\end{block}
+
+\begin{block}{RR}
+\begin{itemize}
+\item Investigation of turbo-machinery problem using the developed adjoint solver 
+\item Application of grid adaptation tool chain available in WUT for turbo-machinery test cases
+\end{itemize}
+\end{block}
+\end{frame}
+
+%%%%%%%%%%% Formulation of Equation %%%%%%%%%%%
+%\begin{frame}{Duality Formulation For Adjoint Design}
+%\begin{block}{Primal:}
+%\begin{equation}
+%Q^{n+1}=F(Q^n)
+%\end{equation}
+%\end{block}
+%\begin{block}{Tangent Linear:}
+%\begin{equation}
+%\frac{\partial Q^{n+1}}{\partial \alpha} = \frac{\partial F}{\partial Q}\frac{\partial Q}{\partial \alpha} +\frac{\partial I}{\partial \alpha}
+%\end{equation}
+%\end{block}
+%
+%\begin{block}{Adjoint Equation:}
+%\begin{equation}
+%v^n = \highlight{\left(\frac{\partial F}{\partial Q}\right)^{T}}v^{n+1} +\frac{\partial I}{\partial Q}
+%\end{equation}
+%\end{block}
+%\end{frame}
+
+\begin{frame}{Advantage of Finite Difference to Develop Jacobian}
+\tiny
+%\begin{equation}
+%\begin{bmatrix}
+%a_{11}  & a_{12}  & 0   & \cdots & 0 \\
+%a_{21}  & a_{22}  & a_{23}  & \ddots  & \vdots \\
+%0 & a_{32}  & a_{33}   & \ddots  & \vdots \\
+%%\vdots & \ddots & \ddots & \ddots & \ddots & \ddots &  & \vdots \\
+%\vdots &  & \ddots  & \ddots& \vdots\\
+%%\vdots  &  & & \ddots & a_{76}  & a_{77}  &  a_{78}  & 0\\
+%%\vdots  &  & & & \ddots & a_{87}  & a_{88}  &  a_{89}\\
+%0   & \cdots & 0 & a_{98} & a_{99}  \\
+%\end{bmatrix}
+%\end{equation}
+
+%\begin{equation}
+%\begin{bmatrix}
+%a_{11}  & a_{12}  & 0 & \cdots & \cdots & \cdots & \cdots & 0 \\
+%a_{21}  & a_{22}  & a_{23}  & \ddots & && & \vdots \\
+%0 & a_{32}  & a_{33} & a_{34}  & \ddots & &  & \vdots \\
+%\vdots & \ddots & \ddots & \ddots & \ddots & \ddots &  & \vdots \\
+%\vdots & & \ddots & \ddots & \ddots & \ddots & \ddots& \vdots\\
+%\vdots  &  & & \ddots & a_{76}  & a_{77}  &  a_{78}  & 0\\
+%\vdots  &  & & & \ddots & a_{87}  & a_{88}  &  a_{89}\\
+%0 & \cdots &  \cdots & \cdots & \cdots & 0 & a_{98} & a_{99}  \\
+%\end{bmatrix}
+%\end{equation}
+
+\begin{equation}
+\begin{bmatrix}
+a_{11}  & a_{12}  & 0  & \cdots & \cdots & \cdots & 0 \\
+a_{21}  & a_{22}  & a_{23}  & \ddots & &&  \vdots \\
+0 & a_{32}  & a_{33} & a_{34}  & \ddots &   & \vdots \\
+\vdots & & \ddots & \ddots & \ddots & \ddots& \vdots\\
+\vdots  &   &  & a_{76}  & a_{77}  &  a_{78}  & 0\\
+\vdots  &   & & \ddots & a_{87}  & a_{88}  &  a_{89}\\
+0 & \cdots &  \cdots & \cdots & 0 & a_{98} & a_{99}  \\
+\end{bmatrix}
+\end{equation}
+\normalsize
+\begin{itemize}
+\item Developed Jacobian is a complete sparse matrix which can be calculated locally
+\item It is conveniently scalable
+\item Options to implement higher order FDM, if more accurate jacobian is required
+\item Tested for stationary problems with sufficient accuracy
+\end{itemize}
+\end{frame}
+
+
+%\begin{frame}{Introduction, Table of Contents, Roadmap}
+%  \uncover<+->{beamer provides a nice Table of Content
+%    feature if you use the \ltx{section} command.}
+%
+%  \uncover<+->{There is little point in starting
+%   your talk with a boring ToC, the audience will not know
+%   what these headings mean. Much better to first give an 
+%   overview/motivation, then give them a 'map' how you will be explaining
+%   your work.}
+%
+%  \uncover<+->{All sections will appear in section listings on the
+%    borders of the style (here at the very top). Since these listings
+%    are to help orientate the audience, I don't think this is useful
+%    before you've shown the ToC, hence it is commented out in the
+%    source of this introductory part.}
+%
+%  \uncover<+->{Note, you could suppress the appearance of a section title
+%   in the ToC if you use the \ltx{section*} command,
+%   but it would still appear at the top of each frame.}
+%\end{frame}
+
+%\begin{frame}{What application are we aiming for?}
+%  Example of itemisation coming up as a block using
+%  the {\tt \textbackslash uncover} command:
+%  \uncover<2->{
+%  \begin{itemize}
+%  \item All items
+%  \item are shown
+%  \item at once,
+%  \end{itemize}
+%  }
+%
+%  \uncover<3->{
+%    Or items popping up one after the other:
+%    \begin{itemize}
+%    \item<4-> Note that when you look at the source of this frame, 
+%    \item<6-> we explicitly number how things
+%    \item<5-> come up.
+%    \end{itemize}
+%
+%    \slidefoot{It is not very useful to give detailed lists of references
+%      at the end, the audience can't flip back and forth in your
+%      presentation. Better to provide a shortened reference at the relevant 
+%      page:\\
+%      T.~Tantau et al., ``The BEAMER class'', Dec 2013, tug.ctan.org }
+%  }
+%\end{frame}
+
+%\begin{frame}{What is the problem that we address?}
+%  \uncover<+->{While here}
+%  \begin{itemize}
+%  \item<+->we simply
+%  \item <+-> increment.
+%  \end{itemize}
+%
+%  \uncover<+->{But beware:}
+%  \begin{itemize}
+%  \item<+-> Avoid
+%  \item<+-> uncovering 
+%  \item<+-> too little
+%  \item<+-> information
+%  \item<+-> in too many
+%  \item<+-> small 
+%  \item<+-> steps
+%  \end{itemize}
+%\end{frame}
+
+%\begin{frame}{Ready for the roadmap?}
+%  Now that we set our work in context, we can show the Table 
+%  of Contents.
+%\end{frame}

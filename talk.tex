@@ -1,0 +1,62 @@
+\documentclass[xcolor={usenames,dvipsnames}]{beamer}
+%\documentclass[trans]{beamer}
+
+% generic packages, macro definitions
+\input{aflo_beamer_packages_macros.tex}
+
+% Define the basic About Flow beamer style
+\input{aflo_beamer_style.tex}
+
+% Tell includegraphics where to find figures:
+\graphicspath{
+{./}
+{figures/},
+}
+
+
+\begin{document}
+
+% A plain titlepage
+\input{titlepage_plain}
+
+\newcommand{\noinstlogo}{\setbeamertemplate{logo}{}} % command to set the logo to nothing
+% Alternative xample for a  titlepage written over an image, white on black
+%\input{titlepage_full_image_dark}
+
+% Example for a  titlepage written over an image, dark on pale
+%\input{titlepage_full_image_pale}
+
+% Example for a titlepage with a wrapped image.
+%\input{titlepage_wrapped_image}
+
+
+
+% Give an introduction, motivation, overview, before you
+% get technical with a table of contents.
+\input{sec.intro}
+
+
+%% Table of Contents, overview
+%\begin{frame}
+%\frametitle{Contents}
+%\tableofcontents%[allsections,hidesubsections]
+%\end{frame}
+
+% This shows the ToC before each new section.
+\AtBeginSection[]
+{
+\begin{frame}{Contents}
+%   \frametitle{\insertsectionhead}
+  \tableofcontents[currentsection,hideothersubsections]
+\end{frame}
+}
+
+
+% Main body
+%\input{sec.main}
+
+
+% Keep this acknowledgements page as a reference to the EU.
+\input{sec.acknowledgements}
+
+\end{document}
